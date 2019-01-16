@@ -31,8 +31,8 @@ Item
       
     Rectangle 
     {
-        width: 300
-        height: 300
+        width: Theme.itemSizeExtraLarge*2
+        height: Theme.itemSizeExtraLarge*2
         color: 'black'
         opacity: 0.3
         visible: fcBox.isVisible
@@ -42,8 +42,8 @@ Item
         {
             anchors.top: parent.top
             anchors.horizontalCenter:parent.horizontalCenter 
-            width: 100
-            height: 100
+            width: Theme.itemSizeMedium
+            height: Theme.itemSizeMedium
             source: "image://theme/icon-m-up"
             visible: fcBox.isVisible
             MouseArea
@@ -60,8 +60,8 @@ Item
         {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter:parent.horizontalCenter 
-            width: 100
-            height: 100
+            width: Theme.itemSizeMedium
+            height: Theme.itemSizeMedium
             source: "image://theme/icon-m-down"
             visible: fcBox.isVisible
             MouseArea
@@ -78,8 +78,8 @@ Item
         {
             anchors.right: parent.right
             anchors.verticalCenter:parent.verticalCenter 
-            width: 100
-            height: 100
+            width: Theme.itemSizeMedium
+            height: Theme.itemSizeMedium
             source: "image://theme/icon-m-right"
             visible: fcBox.isVisible
             MouseArea
@@ -96,8 +96,8 @@ Item
         {
             anchors.left: parent.left
             anchors.verticalCenter:parent.verticalCenter 
-            width: 100
-            height: 100
+            width: Theme.itemSizeMedium
+            height: Theme.itemSizeMedium
             source: "image://theme/icon-m-left"
             visible: fcBox.isVisible
             MouseArea

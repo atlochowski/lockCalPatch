@@ -5,6 +5,8 @@ import org.nemomobile.configuration 1.0
 Page 
 {
     id: page
+    readonly property bool largeScreen: Screen.sizeCategory >= Screen.Large
+    
     ConfigurationGroup
     {
         id: posSettings
@@ -95,7 +97,7 @@ Page
     Rectangle
     {
         id: clockBox
-        height: Theme.fontSizeHuge*2+ Theme.fontSizeLarge*2.1 + Theme.paddingMedium*2
+        height: largeScreen ? Theme.fontSizeHuge*2+ Theme.fontSizeLarge + Theme.fontSizeExtraLarge * 1.1 + Theme.paddingMedium + Theme.fontSizeHuge :  Math.round(128 * Screen.widthRatio) + Math.round(40 * Screen.widthRatio) + Math.round(55 * Screen.widthRatio)+ Theme.paddingMedium+ Theme.fontSizeHuge 
         width: Screen.width*0.5
         color: "transparent"
         border.color: Theme.primaryColor
