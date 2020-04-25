@@ -6,7 +6,7 @@
             "type": "page",
             "title": "Lockscreen calendar",
             "translation_id": "lockscreen-upcoming-patch-title",
-            "icon": "/usr/share/jolla-settings/pages/lockscreen-upcoming-patch/icon-m-cal-set.png",
+            "icon": "image://theme/icon-m-cal-set",
             "order": 5000,
             "params": {
                 "source": "/usr/share/jolla-settings/pages/lockscreen-upcoming-patch/main.qml"
